@@ -27,10 +27,10 @@ public class C03_CssSelector {
             System.out.println("Title testi FAILED");
         }
         //6-  Gift Cards sekmesine basin
-        driver.findElement(By.cssSelector("//input[@id='sp-cc-accept']")).click();
-        //driver.findElement(By.cssSelector("//*[@*='nav-a']")).click();
+        driver.findElement(By.xpath("//input[@id='sp-cc-accept']")).click();
+        //driver.findElement(By.xpath("//div[@id='a-page']")).click();
         //7-  Birthday butonuna basin
-        driver.findElement(By.cssSelector("a[aria-label='Birthday']")).click();
+        driver.findElement(By.xpath("//[@class='nav-a']")).click();
         //8-  Best Seller bolumunden ilk urunu tiklayin
         driver.findElement(By.xpath("(//span[@class='a-truncate-cut'])[1]")).click();
         //9-  Gift card details’den 25 $’i  secin
