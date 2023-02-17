@@ -31,6 +31,7 @@ public class C07_ilkAssertion {
     }
     @AfterClass
     public static void teardown(){
+
         driver.close();
     }
     @Test
