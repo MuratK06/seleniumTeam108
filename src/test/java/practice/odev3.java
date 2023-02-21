@@ -24,6 +24,7 @@ public class odev3 {
         //    click on Alerts
         driver.findElement(By.id("alerts")).click();
         //    print the URL
+           driver.getCurrentUrl().contains("https://testpages.herokuapp.com/styled/index.html");
 
         //    navigate back
         driver.navigate().back();

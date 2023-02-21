@@ -1,4 +1,4 @@
-package day05;
+package day05_assertions_dropdownMenu;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Q1 {
+public class C01_Assertions {
     public static WebDriver driver;
 
     // 1) Bir class oluşturun: YoutubeAssertions
@@ -52,7 +52,7 @@ public class Q1 {
     @Test
     public void imageTest(){
         //  ○ imageTest   => YouTube resminin görüntülendiğini (isDisplayed()) test edin
-        WebElement logoElementi=driver.findElement(By.xpath("//yt-icon[@id='logo-icon']"));
+        WebElement logoElementi=driver.findElement(By.xpath("(//yt-icon[@class='style-scope ytd-logo'])[1]"));
         Assert.assertTrue(logoElementi.isDisplayed());
     }
 
