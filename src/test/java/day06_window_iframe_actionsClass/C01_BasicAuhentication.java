@@ -22,6 +22,7 @@ public class C01_BasicAuhentication extends TestBase {
         String actualGirisYazisi= driver.findElement(By.tagName("p")).getText();
         String expectedIcerik = "Congratulations";
         Assert.assertTrue(actualGirisYazisi.contains(expectedIcerik));
+        bekle(3);
 
     }
 }
