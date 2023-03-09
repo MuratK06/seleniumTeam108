@@ -1,4 +1,4 @@
-package practice;
+package practice.AyseHoca;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
